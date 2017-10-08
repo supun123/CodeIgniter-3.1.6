@@ -82,8 +82,8 @@
     </section>
 
 
-    <!-- Contact Section -->
-<section id="contact">
+    <!-- register Section -->
+<section id="register">
     <div class="container">
         <h1 class="text-center">register</h1>
         <hr class="star-primary">
