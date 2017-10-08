@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Home extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -22,12 +22,5 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('home_Page');
 	}
-    public function supun()
-    {
-        $this->output
-            ->set_content_type("Access-Control-Allow-Origin: *")
-            ->set_content_type("Access-Control-Allow-Methods: POST")
-            ->set_content_type("Access-Control-Allow-Headers: Origin, Methods, Content-Type");
-        $this->load->view('supun');
-    }
+
 }

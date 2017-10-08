@@ -20,7 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url()."home_page/"; ?>css/freelancer.min.css" rel="stylesheet">
-
+    <script>href="<?php echo base_url() ."home_page/"; ?>vendor/popper/popper.js" </script>
 </head>
 
 <body id="page-top">
@@ -36,16 +36,52 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="<?php echo base_url()."home_page/"; ?>#portfolio">Menu</a>
+                    <a class="nav-link js-scroll-trigger" href="#Menu">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="<?php echo base_url()."home_page/"; ?>#about">Make Order</a>
+                    <a class="nav-link js-scroll-trigger" href="#Make_Order">Make Order</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="<?php echo base_url()."home_page/"; ?>#contact">Feedback</a>
+                    <a class="nav-link js-scroll-trigger" href="#Feedback">Feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#register">register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#sign_in " data-toggle="modal" data-target="#Modal">sign in </a>
                 </li>
             </ul>
         </div>
-    </div>
-</nav>
 
+    </div>
+
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Username</label>
+                        <input type="text" class="form-control" id="Username" placeholder="Enter Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter  Password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Sign In</button>
+            </div>
+        </div>
+    </div>
+</div>
