@@ -1,0 +1,54 @@
+/*HEADER style*/
+.navbar{
+    background-color:#c0a16b;
+    opacity: 0.9;
+    /*A7A594*/
+    /*height:100px;*/
+    /*color: rgba(244,141,21,0.95);
+    height:50px;*/
+}
+
+.navbar .container .navbar-brand{
+    font-size: 30px;
+    color: saddlebrown;
+}
+
+.navbar .container a{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    /*color:#ea6153;*/
+}
+
+.navbar .container a:hover{
+    background: rgba(244,181,63,0.95);
+}
+
+/*HOME Page style*/
+.primary-text{
+    color: saddlebrown;
+}
+#main{
+    background-image: url("../images/vt_Mjs5ok.jpg_large.jpg");
+    height:650px;
+    opacity: 1;
+    border-bottom: 1px solid mistyrose;
+    width:1400px;
+    position: relative;
+    top: 0px;
+}
+
+#showcase{
+    margin-left: 100px;
+    background-color: #c0a16b;
+    position: relative;
+    top:200px;
+    right:50px;
+    opacity:0.9;
+    border-radius: 90px;
+    padding: 40px;
+
+}
+.showcase-content h2{
+    font-size: 40px;
+}
