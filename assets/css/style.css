@@ -14,7 +14,7 @@
 }
 
 .navbar .container a{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Open-sans', sans-serif;
     font-size: 20px;
     color: black;
     /*color:#ea6153;*/
@@ -30,19 +30,20 @@
 }
 #main{
     background-image: url("../images/vt_Mjs5ok.jpg_large.jpg");
-    height:650px;
+    height:900px;
     opacity: 1;
     border-bottom: 1px solid mistyrose;
     width:1400px;
     position: relative;
     top: 0px;
+    padding-top: 0px;
 }
 
 #showcase{
     margin-left: 100px;
     background-color: #c0a16b;
     position: relative;
-    top:200px;
+    top:100px;
     right:50px;
     opacity:0.9;
     border-radius: 90px;
@@ -52,3 +53,47 @@
 .showcase-content h2{
     font-size: 40px;
 }
+
+#content {
+    background-color: #333333;
+    position: relative;
+    top:150px;
+    margin-left: 40px;
+    margin-right: 40px;
+    opacity: 0.9;
+}
+
+.content-content h2,h3,p {
+    color: #c0a16b;
+}
+
+.content-content p {
+    font-size: 20px;
+}
+
+/* Footer style */
+#footer-above {
+    background-color: #333333;
+    position: relative;
+    top:250px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#footer-above .footer-content h3,p {
+    color: #c0a16b;
+
+}
+
+#footer-below {
+    background-color: #c0a16b;
+    color: #333333;
+    position: relative;
+    top:300px;
+    height:60px;
+}
+
+.footer-below-content {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
