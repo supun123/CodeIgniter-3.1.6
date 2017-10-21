@@ -5,8 +5,9 @@
             <div class="row">
                 <div class="footer-col col-md-4">
                     <h3>Location</h3>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
+                    <p>University of Colombo School of Computing(UCSC)
+                        <br>2nd building- ground floor
+                        </p>
                 </div>
                 <div class="footer-col col-md-4">
                     <h3>Around the Web</h3>
@@ -77,31 +78,59 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Breakfast Meals</h2>
                             <hr class="star-primary">
-                            <img class="img-fluid img-centered" src="<?php echo base_url()."home_page/"; ?>img/portfolio/cabin.png" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                                <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button class="btn btn-success" type="button" data-dismiss="modal">
-                                <i class="fa fa-times"></i>
-                                Close</button>
+                            <!-- Item starts -->
+                            <div class="row text-center menu-item">
+                                <button class="col-md-2 " type="button">
+                                    <div class="noodle"></div>
+                                    <p>Noddles</p>
+                                    <p>20 RS</p>
+
+                                </button>
+                                <button class="col-md-2 " type="button">
+                                    <div class="rice"></div>
+                                    <p>Rice</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2 "  type="button">
+                                    <div class="bread"></div>
+                                    <p>Bread</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2 " type="button">
+                                    <div class="hopper"></div>
+                                    <p>String Hoppers</p>
+                                    <p>20 RS</p>
+                                </button>
+
+                            </div>
+                            <!-- Item ends -->
+                            <!-- Item starts -->
+
+                            <h2>Side Dishes</h2>
+                            <hr class="star-primary">
+                                <!-- Item starts -->
+                                <div class="row text-center menu-item">
+                                    <button class="col-md-2 " type="button">
+                                        <div class="polsumbola"></div>
+                                        <p>Polsumbola</p>
+                                        <p>20 RS</p>
+                                    </button>
+                                    <button class="col-md-2 kiri" type="button">
+                                        <div class=" kiri"></div>
+                                        <p>kri hodda</p>
+                                        <p>20 RS</p>
+                                    </button>
+                                    <button class="col-md-2"  type="button">
+
+                                        <p>Additional curries</p>
+                                        <p>20 RS</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
                         </div>
                     </div>
                 </div>
@@ -121,32 +150,59 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Lunch Meals</h2>
                             <hr class="star-primary">
-                            <img class="img-fluid img-centered" src="<?php echo base_url()."home_page/"; ?>img/portfolio/cake.png" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                                <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                                        <a href="<http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button class="btn btn-success" type="button" data-dismiss="modal">
-                                <i class="fa fa-times"></i>
-                                Close</button>
+                            <!-- Item starts -->
+                            <div class="row text-center menu-item">
+                                <button class="col-md-2 " type="button">
+                                    <div class="noodle"></div>
+                                    <p>Noddles</p>
+                                    <p>20 RS</p>
+
+                                </button>
+                                <button class="col-md-2 " type="button">
+                                    <div class="rice"></div>
+                                    <p>Rice</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2 "  type="button">
+                                    <div class="bread"></div>
+                                    <p>Bread</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2 " type="button">
+                                    <div class="hopper"></div>
+                                    <p>String Hoppers</p>
+                                    <p>20 RS</p>
+                                </button>
+
+                            </div>
+                            <!-- Item ends -->
+
+                                <h2>Side Dishes</h2>
+                            <hr class="star-primary">
+                                <!-- Item starts -->
+                                <div class="row text-center menu-item">
+                                    <button class="col-md-2 " type="button">
+                                        <div class="polsumbola"></div>
+                                        <p>Polsumbola</p>
+                                        <p>20 RS</p>
+                                    </button>
+                                    <button class="col-md-2 kiri" type="button">
+                                        <div class=" kiri"></div>
+                                        <p>kri hodda</p>
+                                        <p>20 RS</p>
+                                    </button>
+                                    <button class="col-md-2"  type="button">
+
+                                        <p>Additional curries</p>
+                                        <p>20 RS</p>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
+
+                    </div>
                     </div>
                 </div>
             </div>
@@ -165,31 +221,55 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Evening Meals</h2>
                             <hr class="star-primary">
-                            <img class="img-fluid img-centered" src="<?php echo base_url()."home_page/"; ?>img/portfolio/circus.png" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                                <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button class="btn btn-success" type="button" data-dismiss="modal">
-                                <i class="fa fa-times"></i>
-                                Close</button>
+                            <div class="row text-center menu-item" style="padding-right: 20px;">
+                                <button class="col-md-2 " type="button">
+                                    <div class="noodle"></div>
+                                    <p>Noddles</p>
+                                    <p>20 RS</p>
+
+                                </button>
+                                <button class="col-md-2 " type="button">
+                                    <div class="rice"></div>
+                                    <p>Rice</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2 "  type="button">
+                                    <div class="bread"></div>
+                                    <p>Bread</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2 " type="button">
+                                    <div class="hopper"></div>
+                                    <p>String Hoppers</p>
+                                    <p>20 RS</p>
+                                </button>
+
+                            </div>
+                            <!-- Item ends -->
+
+                            <h2>Side Dishes</h2>
+                            <hr class="star-primary">
+                            <!-- Item starts -->
+                            <div class="row text-center menu-item">
+                                <button class="col-md-2 " type="button">
+                                    <div class="polsumbola"></div>
+                                    <p>Polsumbola</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2 kiri" type="button">
+                                    <div class=" kiri"></div>
+                                    <p>kri hodda</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2"  type="button">
+
+                                    <p>Additional curries</p>
+                                    <p>20 RS</p>
+                                </button>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -211,29 +291,53 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img class="img-fluid img-centered" src="<?php echo base_url()."home_page/"; ?>img/portfolio/game.png" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                                <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button class="btn btn-success" type="button" data-dismiss="modal">
-                                <i class="fa fa-times"></i>
-                                Close</button>
+                            <div class="row text-center menu-item">
+                                <button class="col-md-2 " type="button">
+                                    <div class="noodle"></div>
+                                    <p>Noddles</p>
+                                    <p>20 RS</p>
+
+                                </button>
+                                <button class="col-md-2 " type="button">
+                                    <div class="rice"></div>
+                                    <p>Rice</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2 "  type="button">
+                                    <div class="bread"></div>
+                                    <p>Bread</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2 " type="button">
+                                    <div class="hopper"></div>
+                                    <p>String Hoppers</p>
+                                    <p>20 RS</p>
+                                </button>
+
+                            </div>
+                            <!-- Item ends -->
+
+                            <h2>Side Dishes</h2>
+                            <hr class="star-primary">
+                            <!-- Item starts -->
+                            <div class="row text-center menu-item">
+                                <button class="col-md-2 " type="button">
+                                    <div class="polsumbola"></div>
+                                    <p>Polsumbola</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2 kiri" type="button">
+                                    <div class=" kiri"></div>
+                                    <p>kri hodda</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2"  type="button">
+
+                                    <p>Additional curries</p>
+                                    <p>20 RS</p>
+                                </button>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -255,29 +359,52 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img class="img-fluid img-centered" src="<?php echo base_url()."home_page/"; ?>img/portfolio/safe.png" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                                <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button class="btn btn-success" type="button" data-dismiss="modal">
-                                <i class="fa fa-times"></i>
-                                Close</button>
+                            <div class="row text-center menu-item">
+                                <button class="col-md-2 " type="button">
+                                    <div class="noodle"></div>
+                                    <p>Noddles</p>
+                                    <p>20 RS</p>
+
+                                </button>
+                                <button class="col-md-2 " type="button">
+                                    <div class="rice"></div>
+                                    <p>Rice</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2 "  type="button">
+                                    <div class="bread"></div>
+                                    <p>Bread</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2 " type="button">
+                                    <div class="hopper"></div>
+                                    <p>String Hoppers</p>
+                                    <p>20 RS</p>
+                                </button>
+
+                            </div>
+                            <!-- Item ends -->
+
+                            <h2>Side Dishes</h2>
+                            <hr class="star-primary">
+                            <!-- Item starts -->
+                            <div class="row text-center menu-item">
+                                <button class="col-md-2 " type="button">
+                                    <div class="polsumbola"></div>
+                                    <p>Polsumbola</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2 kiri" type="button">
+                                    <div class=" kiri"></div>
+                                    <p>kri hodda</p>
+                                    <p>20 RS</p>
+                                </button>
+                                <button class="col-md-2"  type="button">
+
+                                    <p>Additional curries</p>
+                                    <p>20 RS</p>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
