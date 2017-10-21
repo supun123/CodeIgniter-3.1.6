@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>UCSC Canteen</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url()."home_page/"; ?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,9 @@
 
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url()."home_page/"; ?>css/freelancer.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()."home_page/"; ?>css/menu.css" rel="stylesheet">
     <script>href="<?php echo base_url() ."home_page/"; ?>vendor/popper/popper.js" </script>
+
 </head>
 
 <body id="page-top">

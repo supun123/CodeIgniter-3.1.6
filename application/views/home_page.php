@@ -2,11 +2,16 @@
     <!-- Header -->
     <header class="masthead">
       <div class="container">
-        <img class="img-fluid" src="<?php echo base_url()."home_page/"; ?>img/profile.png" alt="">
+        <img class="img-rounded" src="<?php echo base_url()."home_page/"; ?>img/kitchen.jpeg" alt="">
         <div class="intro-text">
           <span class="name">wellcome</span>
           <hr class="star-light">
-            <!-- <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>-->
+            <span class="skills">Thanks for stopping by!!!
+                <p>We are open from 8.00 a.m to 6.00 p.m 365 days except for Department holidays. </p>
+                        <p>We are providing Breakfast, Lunch and Evening meals. In addition to that Bakery items will be available at open hours.</p>
+                        <p>For the beverages, we are providing Snacks, home made juices,as well as tea, coffee, plant tea according to your preference.</p>
+                        <p>Deserts are also available. </p>
+            </span>
            </div>
          </div>
        </header>
@@ -24,17 +29,18 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url()."home_page/"; ?>img/portfolio/cabin.png" alt="">
+              <img class="img-fluid" src="<?php echo base_url()."home_page/"; ?>img/portfolio/breakfast.jpg" alt="">
+
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="<?php echo base_url()."home_page/"; ?>#portfolioModal2" data-toggle="modal">
+            <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url()."home_page/"; ?>img/portfolio/cake.png" alt="">
+              <img class="img-fluid" src="<?php echo base_url()."home_page/"; ?>img/portfolio/lunch.jpg" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -44,7 +50,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url()."home_page/"; ?>img/portfolio/circus.png" alt="">
+              <img class="img-fluid" src="<?php echo base_url()."home_page/"; ?>img/portfolio/evening.jpg" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -54,7 +60,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url()."home_page/"; ?>img/portfolio/game.png" alt="">
+              <img class="img-fluid" src="<?php echo base_url()."home_page/"; ?>img/portfolio/snacks.jpg" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -64,7 +70,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url()."home_page/"; ?>img/portfolio/safe.png" alt="">
+              <img class="img-fluid" src="<?php echo base_url()."home_page/"; ?>img/portfolio/drinks.jpg" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -74,7 +80,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url()."home_page/"; ?>img/portfolio/submarine.png" alt="">
+              <img class="img-fluid" src="<?php echo base_url()."home_page/"; ?>img/portfolio/other.jpg" alt="">
             </a>
           </div>
         </div>
@@ -153,16 +159,10 @@
         <hr class="star-light">
         <div class="row">
             <div class="col-lg-4 ml-auto">
-                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                <p></p>
             </div>
             <div class="col-lg-4 mr-auto">
-                <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-            </div>
-            <div class="col-lg-8 mx-auto text-center">
-                <a href="<?php echo base_url()."home_page/"; ?>#" class="btn btn-lg btn-outline">
-                    <i class="fa fa-download"></i>
-                    Download Theme
-                </a>
+                <p</p>
             </div>
         </div>
     </div>
