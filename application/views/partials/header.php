@@ -39,7 +39,7 @@
                     <a class="nav-link js-scroll-trigger" href="#Menu">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#Make_Order">Make Order</a>
+                    <a class="nav-link js-scroll-trigger" href="#Make_Order" data-toggle="modal" data-target="#MakeOrderModal">Make Order</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#Feedback">Feedback</a>
@@ -48,7 +48,7 @@
                     <a class="nav-link js-scroll-trigger" href="#register">register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#sign_in " data-toggle="modal" data-target="#Modal">sign in </a>
+                    <a class="nav-link js-scroll-trigger" href="#sign_in " data-toggle="modal" data-target="#signInModal">sign in </a>
                 </li>
             </ul>
         </div>
@@ -56,8 +56,8 @@
     </div>
 
 </nav>
-<!-- Modal -->
-<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Sign-In Modal -->
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -82,6 +82,71 @@
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Sign In</button>
             </div>
+        </div>
+    </div>
+</div>
+<!-- Make Order Modal -->
+<div class="modal fade" id="MakeOrderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Order</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+
+            <div class="modal-body">
+
+                <table class="table table-sm">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Food Name</th>
+                        <th>Prize</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Pasty</td>
+                        <td>30</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Fish bun</td>
+                        <td>30</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Rolls</td>
+                        <td>20</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <?php echo form_open('order/makeOrder');?>
+                    <form><!--can not remove <form> tag because occur problem when remove that -->
+                    <div class="form-group">
+
+                        <label >Enter Order</label>
+
+                        <textarea class="form-control" id="Textarea" rows="3" name="order"></textarea>
+                    <br>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send Order</button>
+
+                    </div>
+                    </form>
+                <?php form_close();?>
+
+
+            </div>
+
+
         </div>
     </div>
 </div>
