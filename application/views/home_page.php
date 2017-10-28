@@ -91,46 +91,56 @@
             <div class="col-lg-8 mx-auto">
                 <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                 <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                <form name="sentMessage" id="contactForm" novalidate>
+                <?php if($this->session->flashdata('msg')){
+                    echo"<h3>".$this->session->flashdata('msg')."</h3>";
+                } ?>
+                <?php echo form_open('register/addUser');?>
+               <!-- <form name="sentMessage" id="contactForm" novalidate> -->
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label>Username</label>
-                            <input class="form-control" id="name" type="text" placeholder="Username" required data-validation-required-message="Please enter your Username.">
+                            <p>  <font color="red" size="3"> <?php echo form_error('username'); ?></font></p>
+                            <input class="form-control" id="name" type="text" placeholder="Username"  name="userName" value="<?php echo set_value('userName'); ?>">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label>Name</label>
-                            <input class="form-control" id="Name" type="text" placeholder="Name" required data-validation-required-message="Please enter your Name.">
+                            <p>  <font color="red" size="3"><?php echo form_error('name'); ?></font></p>
+                            <input class="form-control" id="Name" type="text" placeholder="Name" name="name"value="<?php echo set_value('name'); ?>">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label>NIC</label>
-                            <input class="form-control" id="phone" type="tel" placeholder="NIC" required data-validation-required-message="Please enter your NIC number.">
+                            <p>  <font color="red" size="3"><?php echo form_error('nic'); ?></font></p>
+                            <input class="form-control" id="phone" type="tel" placeholder="NIC"required name="nic" value="<?php echo set_value('nic'); ?>">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label>Phone Number</label>
-                            <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required data-validation-required-message="Please enter your phone number.">
+                            <p>  <font color="red" size="3"> <?php echo form_error('phoneNumber'); ?></font></p>
+                            <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required name="phoneNumber" value="<?php echo set_value('phoneNumber'); ?>" >
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label>Password</label>
-                            <input class="form-control" id="Password" type="Password" placeholder="Password" required data-validation-required-message="Please enter your Password.">
+                            <p>  <font color="red" size="3"> <?php echo form_error('password'); ?></font></p>
+                            <input class="form-control" id="Password" type="Password" placeholder="Password" required name="password" value="<?php echo set_value('password'); ?>">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label>Conform Password</label>
-                            <input class="form-control" id="Conform_Password" type="Password" placeholder="Conform Password" required data-validation-required-message="Please enter your Conform Password.">
+                            <p>  <font color="red" size="3">  <?php echo form_error('conformPassword'); ?></font></p>
+                            <input class="form-control" id="Conform_Password" type="Password" placeholder="Conform Password" required name="conformPassword" value="<?php echo set_value('conformPassword'); ?>" >
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -139,13 +149,15 @@
                     <div class="form-group">
                         <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">submit</button>
                     </div>
-                </form>
+                <!--</form>-->
+                <?php echo form_close();?>
 
 
             </div>
         </div>
     </div>
 </section>
+<?php echo validation_errors(); ?>
 <!-- About Section -->
 <section class="success" id="about">
     <div class="container">
