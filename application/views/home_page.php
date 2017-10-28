@@ -157,7 +157,7 @@
         </div>
     </div>
 </section>
-<?php echo validation_errors(); ?>
+
 <!-- About Section -->
 <section class="success" id="about">
     <div class="container">

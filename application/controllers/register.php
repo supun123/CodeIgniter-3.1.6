@@ -9,7 +9,7 @@
 class register extends CI_Controller
 {
 public function addUser(){
-    echo ("register controller");
+    //echo ("register controller");
     $this->form_validation->set_rules('userName', 'Username', 'required');
     $this->form_validation->set_rules('name', 'Name', 'required');
     $this->form_validation->set_rules('nic', 'Name', 'required');
@@ -22,13 +22,16 @@ public function addUser(){
     }
     else
     {
-        $this->load->model('register_model');
-        $responce=$this->register_model->registerUser();
+        $this->load->model('user_model');
+        $responce=$this->user_model->registerUser();
         if($responce){
             $this->session->set_flashdata('msg','registered successfully');
             redirect('Home/index');
         }
-        else{}
+        else{
+            $this->session->set_flashdata('msg','something went wrong');
+            redirect('Home/index');
+        }
 
         //$this->load->view('formsuccess');
     }
