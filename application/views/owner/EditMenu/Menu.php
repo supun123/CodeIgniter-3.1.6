@@ -6,7 +6,7 @@
 <div id="sidebar2">
     <!-- Header -->
     <header class="masthead">
-
+        <H3>Edit Munu</H3>
     </header>
 
        <!-- Portfolio Grid Section -->
