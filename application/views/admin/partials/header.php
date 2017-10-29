@@ -24,7 +24,11 @@
 </head>
 
 <body id="page-top">
-
+<?php
+if(!$this->session->userdata('loggedin')){
+    redirect('Home/index');
+}
+?>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -44,11 +48,16 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#Feedback">Feedback</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#register">register</a>
-                </li>
-                <li class="nav-item" id="hid">
-                    <a class="nav-link js-scroll-trigger" href="#sign_in " data-toggle="modal" data-target="#signInModal">sign in </a>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <?php echo  $this->session->userdata('userName');?>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="<?php echo base_url('index.php/login/logoutUser')?>">Logout</a>
+
+                    </div>
                 </li>
             </ul>
         </div>
@@ -56,55 +65,7 @@
     </div>
 
 </nav>
-<style>
-    #hid{
-        display: block;
-    }
-</style>
-<script>
-    if(true) {
-        var x = document.getElementById("hid");
-        x.style.display = "block";
-    }
-</script>
-<!-- Sign-In Modal -->
-<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <?php if($this->session->flashdata('errmsglogin')){
-                    echo"<h3>".$this->session->flashdata('errmsglogin')."</h3>";
-                }else if($this->session->flashdata('msglogin')){
-                    echo"<h3>".$this->session->flashdata('msglogin')."</h3>";
-                } ?>
-                <?php echo form_open('login/loginUser');?>
 
-                    <div class="form-group">
-                        <label for="formGroupExampleInput">Username</label>
-                        <input type="text" class="form-control" id="Username" placeholder="Enter Username" name="singInUserName">
-                    </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput2">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Enter  Password"name="singInPassword">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Sign In</button>
-                    </div>
-
-                <?php echo form_close();?>
-                <?php echo validation_errors(); ?>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 
 <!-- Make Order Modal -->

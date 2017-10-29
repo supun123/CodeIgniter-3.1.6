@@ -35,14 +35,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#Menu">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#register">register</a>
-                </li>
-                <li class="nav-item" id="hid">
-                    <a class="nav-link js-scroll-trigger" href="#sign_in " data-toggle="modal" data-target="#signInModal">sign in </a>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <?php echo  $this->session->userdata('userName');?>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="<?php echo base_url('index.php/login/logoutUser')?>">Logout</a>
+
+                    </div>
                 </li>
             </ul>
         </div>
@@ -50,6 +51,8 @@
     </div>
 
 </nav>
+
+
 
 
 <!-- Sign-In Modal -->

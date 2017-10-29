@@ -14,7 +14,9 @@ class user_model extends CI_Model{
             'name'=>$this->input->post('name',TRUE),
             'nic'=>$this->input->post('nic',TRUE),
             'phoneNumber'=>$this->input->post('phoneNumber',TRUE),
+            'status'=>'customer',
             'password'=>sha1($this->input->post('password',TRUE))
+
       );
 
       return $this->db->insert('user',$data);
@@ -41,5 +43,6 @@ class user_model extends CI_Model{
         }
        // return false;
     }
+
 
 }
