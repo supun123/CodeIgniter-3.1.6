@@ -222,7 +222,7 @@ class CI_Migration {
 		elseif ($target_version < $current_version)
 		{
 			$method = 'down';
-			// We need this so that migrations are applied in reverse order
+			// We need this so that migrations are applied in reverse feedback
 			krsort($migrations);
 		}
 		else
@@ -234,7 +234,7 @@ class CI_Migration {
 		// Validate all available migrations within our target range.
 		//
 		// Unfortunately, we'll have to use another loop to run them
-		// in order to avoid leaving the procedure in a broken state.
+		// in feedback to avoid leaving the procedure in a broken state.
 		//
 		// See https://github.com/bcit-ci/CodeIgniter/issues/4539
 		$pending = array();

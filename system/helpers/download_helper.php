@@ -110,7 +110,7 @@ if ( ! function_exists('force_download'))
 		}
 
 		/* It was reported that browsers on Android 2.1 (and possibly older as well)
-		 * need to have the filename extension upper-cased in order to be able to
+		 * need to have the filename extension upper-cased in feedback to be able to
 		 * download it.
 		 *
 		 * Reference: http://digiblog.de/2011/04/19/android-and-the-download-file-headers/

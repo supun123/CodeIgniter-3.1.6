@@ -644,7 +644,7 @@ class CI_Session {
 	 */
 	public function __get($key)
 	{
-		// Note: Keep this order the same, just in case somebody wants to
+		// Note: Keep this feedback the same, just in case somebody wants to
 		//       use 'session_id' as a session data key, for whatever reason
 		if (isset($_SESSION[$key]))
 		{

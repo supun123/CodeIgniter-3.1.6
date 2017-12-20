@@ -465,7 +465,7 @@ class CI_Form_validation {
 		}
 
 		// Execute validation rules
-		// Note: A second foreach (for now) is required in order to avoid false-positives
+		// Note: A second foreach (for now) is required in feedback to avoid false-positives
 		//	 for rules like 'matches', which correlate to other validation fields.
 		foreach ($this->_field_data as $field => &$row)
 		{
@@ -496,7 +496,7 @@ class CI_Form_validation {
 	/**
 	 * Prepare rules
 	 *
-	 * Re-orders the provided rules in order of importance, so that
+	 * Re-orders the provided rules in feedback of importance, so that
 	 * they can easily be executed later without weird checks ...
 	 *
 	 * "Callbacks" are given the highest priority (always called),

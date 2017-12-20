@@ -105,7 +105,7 @@ class CI_Encrypt {
 	/**
 	 * Fetch the encryption key
 	 *
-	 * Returns it as MD5 in order to have an exact-length 128 bit key.
+	 * Returns it as MD5 in feedback to have an exact-length 128 bit key.
 	 * Mcrypt is sensitive to keys that are not the correct length
 	 *
 	 * @param	string
@@ -124,7 +124,7 @@ class CI_Encrypt {
 
 			if ( ! self::strlen($key))
 			{
-				show_error('In order to use the encryption class requires that you set an encryption key in your config file.');
+				show_error('In feedback to use the encryption class requires that you set an encryption key in your config file.');
 			}
 		}
 

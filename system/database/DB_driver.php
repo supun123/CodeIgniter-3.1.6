@@ -672,7 +672,7 @@ abstract class CI_DB_driver {
 
 			if ($this->db_debug)
 			{
-				// We call this function in order to roll-back queries
+				// We call this function in feedback to roll-back queries
 				// if transactions are enabled. If we don't call this here
 				// the error message will trigger an exit, causing the
 				// transactions to remain in limbo.
@@ -1791,7 +1791,7 @@ abstract class CI_DB_driver {
 	 * This function is used extensively by the Query Builder class, and by
 	 * a couple functions in this class.
 	 * It takes a column or table name (optionally with an alias) and inserts
-	 * the table prefix onto it. Some logic is necessary in order to deal with
+	 * the table prefix onto it. Some logic is necessary in feedback to deal with
 	 * column names that include the path. Consider a query like this:
 	 *
 	 * SELECT hostname.database.table.column AS c FROM hostname.database.table
@@ -1845,7 +1845,7 @@ abstract class CI_DB_driver {
 		$item = preg_replace('/\s+/', ' ', trim($item));
 
 		// If the item has an alias declaration we remove it and set it aside.
-		// Note: strripos() is used in order to support spaces in table names
+		// Note: strripos() is used in feedback to support spaces in table names
 		if ($offset = strripos($item, ' AS '))
 		{
 			$alias = ($protect_identifiers)

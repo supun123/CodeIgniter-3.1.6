@@ -40,23 +40,18 @@ if(!$this->session->userdata('loggedin')){
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#Menu">Menu</a>
+                    <a class="nav-link js-scroll-trigger" href="<?php echo base_url()."index.php/registeredUser/"; ?>">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#Make_Order" data-toggle="modal" data-target="#MakeOrderModal">Make Order</a>
+                    <a class="nav-link js-scroll-trigger" href="" data-toggle="modal" data-target="#Feedback">Feedback</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#Feedback">Feedback</a>
-                </li>
-
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <?php echo  $this->session->userdata('userName');?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="<?php echo base_url('index.php/login/logoutUser')?>">Logout</a>
-
+                        <a class="dropdown-item" href="<?php echo base_url('index.php/login/logoutUser')?>">User profile</a>
                     </div>
                 </li>
             </ul>
@@ -69,58 +64,28 @@ if(!$this->session->userdata('loggedin')){
 
 
 <!-- Make Order Modal -->
-<div class="modal fade" id="MakeOrderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Order</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-
-
             <div class="modal-body">
 
-                <table class="table table-sm">
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Food Name</th>
-                        <th>Prize</th>
-
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Pasty</td>
-                        <td>30</td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Fish bun</td>
-                        <td>30</td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Rolls</td>
-                        <td>20</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <?php echo form_open('order/makeOrder');?>
-                    <form><!--can not remove <form> tag because occur problem when remove that -->
+                <?php echo form_open('feedback/makeOrder');?>
+                    <form>
                     <div class="form-group">
 
-                        <label >Enter Order</label>
-
-                        <textarea class="form-control" id="Textarea" rows="3" name="order"></textarea>
+                        <label >Enter Feedback</label>
+                        <p>  <font color="red" size="3"> <?php echo form_error('feedback'); ?></font></p>
+                        <textarea class="form-control" id="Textarea" rows="3" name="feedback"></textarea>
+                        <p class="help-block text-danger"></p>
                     <br>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Send Order</button>
+                        <button type="submit" class="btn btn-primary">Send </button>
 
                     </div>
                     </form>

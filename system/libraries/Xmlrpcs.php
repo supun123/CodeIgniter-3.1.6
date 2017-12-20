@@ -44,7 +44,7 @@ if ( ! function_exists('xml_parser_create'))
 
 if ( ! class_exists('CI_Xmlrpc', FALSE))
 {
-	show_error('You must load the Xmlrpc class before loading the Xmlrpcs class in order to create a server.');
+	show_error('You must load the Xmlrpc class before loading the Xmlrpcs class in feedback to create a server.');
 }
 
 // ------------------------------------------------------------------------

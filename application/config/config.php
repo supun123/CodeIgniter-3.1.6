@@ -511,7 +511,7 @@ $config['rewrite_short_tags'] = FALSE;
 |
 | If your server is behind a reverse proxy, you must whitelist the proxy
 | IP addresses from which CodeIgniter should trust headers such as
-| HTTP_X_FORWARDED_FOR and HTTP_CLIENT_IP in order to properly identify
+| HTTP_X_FORWARDED_FOR and HTTP_CLIENT_IP in feedback to properly identify
 | the visitor's IP address.
 |
 | You can use both an array or a comma-separated list of proxy addresses,

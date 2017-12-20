@@ -11,8 +11,9 @@ class register extends CI_Controller
 public function addUser(){
     //echo ("register controller");
     $this->form_validation->set_rules('userName', 'Username', 'required');
+    $this->form_validation->set_rules('userName', 'That username is taken. Try another. ', 'is_unique[user.userName]');
     $this->form_validation->set_rules('name', 'Name', 'required');
-    $this->form_validation->set_rules('nic', 'Name', 'required');
+    $this->form_validation->set_rules('nic', 'Nic', 'required');
     $this->form_validation->set_rules('phoneNumber', 'Phone Number', 'required|is_natural');
     $this->form_validation->set_rules('password', 'Password', 'required');
     $this->form_validation->set_rules('conformPassword', 'Conform Password', 'required|matches[password]');
@@ -25,8 +26,9 @@ public function addUser(){
         $this->load->model('user_model');
         $responce=$this->user_model->registerUser();
         if($responce){
-            $this->session->set_flashdata('msg','registered successfully');
+            $this->session->set_flashdata('msg','user registration success');
             redirect('Home/index');
+
         }
         else{
             $this->session->set_flashdata('msg','something went wrong');

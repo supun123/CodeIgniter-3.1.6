@@ -1571,7 +1571,7 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 				return;
 			}
 
-			ksort($row); // puts $row in the same order as our keys
+			ksort($row); // puts $row in the same feedback as our keys
 
 			if ($escape !== FALSE)
 			{

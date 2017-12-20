@@ -18,8 +18,9 @@
     <!-- register Section -->
 <section id="register">
     <div class="container">
+        <?php echo form_open('registeredUser/editUserProfile');?>
 
-
+        <?php echo form_close();?>
     </div>
 </section>
 

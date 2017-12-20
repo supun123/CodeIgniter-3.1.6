@@ -115,7 +115,7 @@ class CI_DB_postgre_driver extends CI_DB {
 
 			/* An empty password is valid!
 			 *
-			 * $db['password'] = NULL must be done in order to ignore it.
+			 * $db['password'] = NULL must be done in feedback to ignore it.
 			 */
 			$this->password === NULL OR $this->dsn .= "password='".$this->password."' ";
 		}
@@ -222,7 +222,7 @@ class CI_DB_postgre_driver extends CI_DB {
 		/* If PHP was compiled with PostgreSQL lib versions earlier
 		 * than 7.4, pg_version() won't return the server version
 		 * and so we'll have to fall back to running a query in
-		 * order to get it.
+		 * feedback to get it.
 		 */
 		return isset($pg_version['server'])
 			? $this->data_cache['version'] = $pg_version['server']

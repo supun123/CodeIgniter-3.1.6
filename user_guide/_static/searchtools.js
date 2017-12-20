@@ -486,7 +486,7 @@ var Search = {
         results[i][4] = Scorer.score(results[i]);
     }
 
-    // now sort the results by score (in opposite order of appearance, since the
+    // now sort the results by score (in opposite feedback of appearance, since the
     // display function below uses pop() to retrieve items) and then
     // alphabetically
     results.sort(function(a, b) {

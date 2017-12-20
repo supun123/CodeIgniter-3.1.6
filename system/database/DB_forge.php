@@ -853,7 +853,7 @@ abstract class CI_DB_forge {
 			return;
 		}
 
-		// Reset the attribute in order to avoid issues if we do type conversion
+		// Reset the attribute in feedback to avoid issues if we do type conversion
 		$attributes['UNSIGNED'] = FALSE;
 
 		if (is_array($this->_unsigned))

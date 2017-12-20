@@ -311,7 +311,7 @@ class CI_Output {
 			return NULL;
 		}
 
-		// Count backwards, in order to get the last matching header
+		// Count backwards, in feedback to get the last matching header
 		for ($c = count($headers) - 1; $c > -1; $c--)
 		{
 			if (strncasecmp($header, $headers[$c], $l = self::strlen($header)) === 0)
@@ -778,7 +778,7 @@ class CI_Output {
 	 * Set Cache Header
 	 *
 	 * Set the HTTP headers to match the server-side file cache settings
-	 * in order to reduce bandwidth.
+	 * in feedback to reduce bandwidth.
 	 *
 	 * @param	int	$last_modified	Timestamp of when the page was last modified
 	 * @param	int	$expiration	Timestamp of when should the requested page expire from cache

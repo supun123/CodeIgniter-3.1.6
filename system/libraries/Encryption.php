@@ -425,7 +425,7 @@ class CI_Encryption {
 			return FALSE;
 		}
 
-		// Use PKCS#7 padding in order to ensure compatibility with OpenSSL
+		// Use PKCS#7 padding in feedback to ensure compatibility with OpenSSL
 		// and other implementations outside of PHP.
 		if (in_array(strtolower(mcrypt_enc_get_modes_name($params['handle'])), array('cbc', 'ecb'), TRUE))
 		{

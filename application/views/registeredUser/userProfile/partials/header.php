@@ -25,14 +25,14 @@
 
 <body id="page-top">
 <?php
-if(!($this->session->userdata('loggedin')and ($this->session->userdata('status')=='admin') )){
+if(!$this->session->userdata('loggedin')){
     redirect('Home/index');
 }
 ?>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">ucsc canteen </a>
+        <a class="navbar-brand js-scroll-trigger" href="../">ucsc canteen </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 
             <i class="fa fa-bars"></i>
@@ -40,24 +40,18 @@ if(!($this->session->userdata('loggedin')and ($this->session->userdata('status')
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="<?php echo base_url("index.php/owner/loadBillView")?>">Bill</a>
+                    <a class="nav-link js-scroll-trigger" href="<?php echo base_url()."index.php/registeredUser/"; ?>">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="<?php echo base_url("index.php/owner/loadEditCustomersView")?>">Customers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="<?php echo base_url("index.php/owner/loadOrdersView")?>">View Order</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="<?php echo base_url("index.php/owner/loadEditMenuView")?>">edit  Menu</a>
+                    <a class="nav-link js-scroll-trigger" href="" data-toggle="modal" data-target="#Feedback">Feedback</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        admin <?php echo  $this->session->userdata('userName');?>
+                        <?php echo  $this->session->userdata('userName');?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="<?php echo base_url('index.php/login/logoutUser')?>">Logout</a>
-
+                        <a class="dropdown-item" href="<?php echo base_url('index.php/login/logoutUser')?>">User profile</a>
                     </div>
                 </li>
             </ul>
@@ -69,4 +63,38 @@ if(!($this->session->userdata('loggedin')and ($this->session->userdata('status')
 
 
 
+<!-- Make Order Modal -->
+<div class="modal fade" id="Feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
 
+                <?php echo form_open('feedback/makeOrder');?>
+                    <form>
+                    <div class="form-group">
+
+                        <label >Enter Feedback</label>
+                        <p>  <font color="red" size="3"> <?php echo form_error('feedback'); ?></font></p>
+                        <textarea class="form-control" id="Textarea" rows="3" name="feedback"></textarea>
+                        <p class="help-block text-danger"></p>
+                    <br>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send </button>
+
+                    </div>
+                    </form>
+                <?php form_close();?>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

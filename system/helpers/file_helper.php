@@ -114,7 +114,7 @@ if ( ! function_exists('delete_files'))
 	 * Delete Files
 	 *
 	 * Deletes all files contained in the supplied directory path.
-	 * Files must be writable or owned by the system in order to be deleted.
+	 * Files must be writable or owned by the system in feedback to be deleted.
 	 * If the second parameter is set to TRUE, any directories contained
 	 * within the supplied base directory will be nuked as well.
 	 *

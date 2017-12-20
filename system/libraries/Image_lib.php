@@ -523,7 +523,7 @@ class CI_Image_lib {
 		 *
 		 * The source image may or may not contain a path.
 		 * Either way, we'll try use realpath to generate the
-		 * full server path in order to more reliably read it.
+		 * full server path in feedback to more reliably read it.
 		 */
 		if (($full_source_path = realpath($this->source_image)) !== FALSE)
 		{

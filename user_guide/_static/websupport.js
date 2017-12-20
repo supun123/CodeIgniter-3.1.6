@@ -105,13 +105,13 @@
    * inserting comments into the list.
    */
   function setComparator() {
-    // If the first three letters are "asc", sort in ascending order
+    // If the first three letters are "asc", sort in ascending feedback
     // and remove the prefix.
     if (by.substring(0,3) == 'asc') {
       var i = by.substring(3);
       comp = function(a, b) { return a[i] - b[i]; };
     } else {
-      // Otherwise sort in descending order.
+      // Otherwise sort in descending feedback.
       comp = function(a, b) { return b[by] - a[by]; };
     }
 

@@ -21,18 +21,20 @@
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url()."home_page/"; ?>css/freelancer.min.css" rel="stylesheet">
     <script>href="<?php echo base_url() ."home_page/"; ?>vendor/popper/popper.js" </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body id="page-top">
 <?php
-if(!($this->session->userdata('loggedin')and ($this->session->userdata('status')=='admin') )){
+if(!($this->session->userdata('loggedin')and ($this->session->userdata('status')== 'admin') )){
     redirect('Home/index');
 }
 ?>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">ucsc canteen </a>
+        <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url("index.php/owner/index")?>">ucsc canteen </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 
             <i class="fa fa-bars"></i>
@@ -48,8 +50,20 @@ if(!($this->session->userdata('loggedin')and ($this->session->userdata('status')
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="<?php echo base_url("index.php/owner/loadOrdersView")?>">View Order</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="<?php echo base_url("index.php/owner/loadEditMenuView")?>">edit  Menu</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">edit Menu</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="<?php echo base_url('index.php/owner/ShortEats')?>">Short Eats</a>
+                        <a class="dropdown-item" href="<?php echo base_url('index.php/owner/breakfast')?>">Breakfast</a>
+                        <a class="dropdown-item" href="<?php echo base_url('index.php/owner/lunch')?>">Lunch</a>
+                        <a class="dropdown-item" href="<?php echo base_url('index.php/owner/evening')?>">Evening</a>
+                        <a class="dropdown-item" href="<?php echo base_url('index.php/owner/SideItem')?>">Side Item</a>
+                        <a class="dropdown-item" href="<?php echo base_url('index.php/owner/Drinks')?>">Cool Drinks</a>
+                        <a class="dropdown-item" href="<?php echo base_url('index.php/owner/Yogurt')?>">Yogurt</a>
+
+
+
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
